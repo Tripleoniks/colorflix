@@ -1,0 +1,248 @@
+.home {
+    padding: 6rem 2rem 3rem 2rem;
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0 25px;
+
+        #highlight,
+        .highlight {
+            background-color: rgba(14, 64, 156, 0.3);
+        }
+
+        .moviexs {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 0 20px;
+            cursor: pointer;
+        }
+        
+        .moviexss {
+            padding: 0 20px;
+            cursor: pointer;
+        }
+        
+
+        tr {
+            td {
+                    #selected,
+                    .selected {
+                        color: yellow;
+                    }
+            }
+        }
+    }
+
+    .sort {
+
+        .active {
+            background-color: dodgerblue;
+            padding: 3px;
+            border-radius: 5px;
+            width: fit-content;
+        }
+
+        .pag {
+            margin-bottom: 15px;
+            list-style: none;
+            
+        }
+        .pag-links {
+            list-style: none;
+            margin: 0 15px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #fff !important;
+            cursor: pointer;
+        }
+        .prev {
+            margin-right: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .next {
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .dots {
+            margin: 0 15px 0 10px;
+
+        }
+        
+
+        .pag {
+            color: #fff;
+            display: flex;
+        }
+
+        .toggles {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+
+            .check {
+                margin-right: 15px;
+                
+            }
+
+            .sort-label {
+                color: #fff;
+                margin-right: 10px;
+                font-size: 13px;
+            }
+    
+            select {
+                padding: 10px;
+                background-color: #fff;
+                border-radius: 6px;
+                outline: none;
+                border: none;
+            }
+
+            
+
+        }
+
+        
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 1px auto;
+        justify-content: space-between;
+        gap: 20px;
+        .movie {
+            color: rgb(218, 218, 218);
+            flex: 0 0 230px;
+            cursor: pointer;
+            
+            .bottom {
+                display: flex;
+                justify-content: space-between;
+
+                #selected {
+                    color: yellow;
+                }
+            }
+
+            .img {
+              background-size: cover;
+              height: 300px;
+              margin-bottom: 10px;
+              border: 1px solid rgb(46, 46, 46);
+              position: relative;
+
+              .rating {
+                  position: absolute;
+                  font-size: 10px;
+                  padding: 5px;
+                  border-radius: 50%;
+                  border: 2px solid green;
+                  background-color: rgba(0,0,0,.8);
+                  right: 4%;
+                  top: 3%;
+              }
+            }
+
+            .title {
+              font-size: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .home {
+        .sort {
+
+            .toggles {
+
+                .tmp {
+                    margin-left: 0;
+                }
+            }
+        }
+        .container {
+            .movie {
+                flex: 0 0 170px;
+
+                .img {
+                    height: 250px;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 769px) {
+    .home {
+        padding: 6rem 12px 3rem 12px;
+    
+        .sort {
+
+            .toggles {
+
+                .tmp {
+                    margin-left: 0;
+                }
+            }
+        }
+        .container {
+            .movie {
+                flex: 0 0 160px;
+
+                .img {
+                    height: 240px;
+                }
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .home {
+        padding: 6rem 12px 3rem 12px;
+    
+        .sort {
+
+            .toggles {
+
+                .tmp {
+                    margin-left: 0;
+                }
+            }
+        }
+        .container {
+            .movie {
+                flex: 0 0 160px;
+
+                .img {
+                    height: 240px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 360px) {
+    .home {
+        padding: 6rem 12px 3rem 12px;
+    
+        .sort {
+
+            .toggles {
+
+                .tmp {
+                    margin-left: 0;
+                }
+            }
+        }
+        .container {
+            .movie {
+                flex: 0 0 150px;
+
+                .img {
+                    height: 240px;
+                }
+            }
+        }
+    }
+}
